@@ -1,0 +1,206 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #e9ebee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  height: 100%;
+}
+.login,
+.register {
+  width: 50%;
+}
+
+/* Login */
+.login {
+  float: left;
+  background-color: #fafafa;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  padding-top: 100px;
+}
+.login h1 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #eeeeef;
+}
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+.login span {
+  float: left;
+}
+.login a {
+  float: right;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s all ease-in-out;
+}
+.login a:hover {
+  color: #9526a9;
+  font-weight: bold;
+}
+.login button {
+  width: 100%;
+  margin: 30px 0;
+  padding: 10px;
+  border: none;
+  background-color: #9526a9;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.login button:hover {
+  width: 97%;
+  font-size: 22px;
+  border-radius: 5px;
+}
+.login hr {
+  width: 30%;
+  display: inline-block;
+}
+.login p {
+  display: inline-block;
+  margin: 0px 10px 30px;
+}
+.login ul {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.login ul li {
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.login ul li:hover {
+  opacity: 0.6;
+}
+.login ul li:last-child {
+  margin-right: 0;
+}
+.login .copyright {
+  display: inline-block;
+  float: none;
+}
+
+/* Register */
+.register {
+  float: right;
+  background-image: linear-gradient(135deg, #23212f 5%, #9526a9 95%);
+  height: 100%;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+  padding: 100px 0;
+}
+.register h2 {
+  margin: 30px 0;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+.register p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.register button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.2s all ease-in-out;
+}
+.register button:hover {
+  color: #9526a9;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+
+
+/* ✅ Responsive Design: Tablet */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .login,
+  .register {
+    width: 100%;
+    border-radius: 0;
+  }
+  .login {
+    border-radius: 10px 10px 0 0;
+  }
+  .register {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/* ✅ Responsive Design: Phone */
+@media (max-width: 600px) {
+  body {
+    height: auto;
+    padding: 20px 0;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  .login,
+  .register {
+    padding: 30px 20px;
+  }
+  .login h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .register h2 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+  }
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .login button,
+  .register button {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .login ul li {
+    margin: 0 8px;
+  }
+  .login span,
+  .login a {
+    font-size: 12px;
+  }
+  .register p {
+    font-size: 14px;
+  }
+}
